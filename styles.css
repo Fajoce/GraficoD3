@@ -1,0 +1,17 @@
+body {
+    font-family: system-ui;
+    background: navajowhite;
+    color: white;
+    text-align: center;
+  }
+  .chart div {
+    font: 10px arial;
+    background-color: blue;
+    text-align: right;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    line-height: 40px;
+    width: 40px;
+  }
+  
