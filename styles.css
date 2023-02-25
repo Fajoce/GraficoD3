@@ -1,17 +1,17 @@
 body {
-    font-family: system-ui;
-    background: navajowhite;
-    color: white;
-    text-align: center;
-  }
-  .chart div {
-    font: 10px arial;
-    background-color: blue;
-    text-align: right;
-    padding: 5px;
-    margin: 5px;
-    color: white;
-    line-height: 40px;
-    width: 40px;
-  }
-  
+  font-family: system-ui;
+  background: cyan;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to right, blue, pink);
+}
+.chart div {
+  font: 10px arial;
+  background: linear-gradient(to right, red, pink);
+  text-align: right;
+  padding: 5px;
+  margin: 5px;
+  color: black;
+  height: 30px;
+  border-radius: 10px;
+}

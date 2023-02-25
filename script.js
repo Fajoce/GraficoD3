@@ -16,29 +16,30 @@ function Grafico() {
 
 function addData() {
   let datos = document.getElementById("valores").value;
-  for (let i = 0; i = data.length; i++) {
+  for (let i = 0; i <= data.length; i++) {
     data.shift(data[i]);
   }
- if(datos != '' && datos > 0){
-   data.push(datos);
-    limpiar(); 
+  data = datos.split(",");
+  if (datos != "") {
+    for (let i = 0; i <= data.lenght; i++) {
+      data.push(datos[i]);
+    }
+  } else {
+    alert("No hay datos");
+  }
+  limpiar();
   Grafico();
- }
-  else{
-    alert('Introduzca un número válido')
-  } 
 }
 function limpiar() {
   document.getElementById("valores").value = "";
 }
 //https://codepen.io/fajoce/pen/qBMaZPq
-function updateData(){
+function updateData() {
   debugger;
   let actual = document.getElementById("valores");
   let nuevo = document.getElementById("nuevo");
-while(data.indexOf(actual.value)!= -1){
-  data.splice(data.indexOf(actual.value),1, nuevo.value)  
+  while (data.indexOf(actual.value) != -1) {
+    data.splice(data.indexOf(actual.value), 1, nuevo.value);
+  }
+  Grafico();
 }
-Grafico();
-}
-
