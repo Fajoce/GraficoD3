@@ -3,15 +3,17 @@ body {
   background: cyan;
   color: white;
   text-align: center;
-  background: linear-gradient(to right, blue, pink);
+  background: linear-gradient(to right, rgb(170, 170, 243), pink);
 }
 .chart div {
+  margin-top: 100px;
   font: 10px arial;
-  background: linear-gradient(to right, red, pink);
+  background: linear-gradient(to right, rgb(76, 0, 255), rgb(73, 246, 5));
   text-align: right;
   padding: 5px;
   margin: 5px;
   color: black;
-  height: 30px;
+  height: 50px;
   border-radius: 10px;
+  font-size: large;
 }

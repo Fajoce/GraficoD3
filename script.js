@@ -36,10 +36,22 @@ function limpiar() {
 //https://codepen.io/fajoce/pen/qBMaZPq
 function updateData() {
   debugger;
-  let actual = document.getElementById("valores");
-  let nuevo = document.getElementById("nuevo");
+  
+  let actual = document.getElementById("valores")
+  let nuevo = document.getElementById("nuevo")
+  if(actual != '' || nuevo != ''){
   while (data.indexOf(actual.value) != -1) {
     data.splice(data.indexOf(actual.value), 1, nuevo.value);
   }
+}
+else{
+  alert('Nada que actualizar')
+  //exit
+}
+  limpiarAreaGrafico();
   Grafico();
+}
+
+function limpiarAreaGrafico(){
+document.getElementsByClassName('chart').innerHtml = ""
 }
