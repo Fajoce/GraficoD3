@@ -17,3 +17,6 @@ body {
   border-radius: 10px;
   font-size: large;
 }
+.main{
+  background: linear-gradient(to right, #ff9d00, rgb(41, 5, 246));
+}

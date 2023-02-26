@@ -15,12 +15,16 @@
    
 </head>
 
-<body onload="Grafico()">
+<body>
+    <div class="main">
     <input type="text" id="valores" class="mt-5">
-    <button class="btn btn-primary" onclick="addData()" data-bs-toggle="tooltip" data-bs-placement="right" title="Agrega un conjunto de valores separados por comas">Add data</button>
+    <button class="btn btn-info" onclick="addData()" data-bs-toggle="tooltip" data-bs-placement="right" title="Agrega un conjunto de valores separados por comas">Add data</button>
     <input type="number" id="nuevo">
     <button class="btn btn-danger" onclick="updateData()" data-bs-toggle="tooltip" data-bs-placement="right" title="Actualiza valor por valor">
         Update data</button>
+        <button class="btn btn-danger" onclick="deleteData()" data-bs-toggle="tooltip" data-bs-placement="right" title="Elimina valor especifico">
+            Delete data</button>        
+        </div>
     <div class="chart">
         <hr>
     </div> 
